@@ -1,5 +1,16 @@
 body {
-  background-color: white;
+  background-color:white;
 }
-.site-nav a {
+body {
+  font-family: Roboto
+  color: brown;
 }
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+/*/СEКТОРЫ
+УНИВЕРСАЛЬНЫЙ СЕКТОP*/
