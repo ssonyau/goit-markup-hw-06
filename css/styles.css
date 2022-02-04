@@ -14,6 +14,7 @@ h6{
 ul{
 margin: 0;
 padding-left: 0;
+list-style: none;
 }
 
 button{
@@ -262,12 +263,13 @@ color: #212121;
 .reasons-link:hover,
 .reasons-link:focus{
   color: var(--accent-color);
-
+cursor: pointer;
+background-color: #2196F3;
 }
 
 .reasons-item{
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 50px;
   padding-right: 8px;
 }
 
@@ -280,6 +282,9 @@ line-height: 2.00;
 letter-spacing: 0.06em;
 
 color: #212121;
+padding-top: 20px;
+padding-left: 24px;
+padding-right: 24px;
 }
 
 .portfolio-text{
@@ -291,6 +296,8 @@ letter-spacing: 0.03em;
 color: #757575;
 
 padding-bottom: 20px;
+padding-left: 24px;
+padding-right: 24px;
 }
 
 .portfolio-pre{
@@ -337,6 +344,7 @@ letter-spacing: 0.03em;
 
 color: #2196F3;
 margin-right: 93px;
+text-decoration: none;
 
 }
 
@@ -391,6 +399,22 @@ color: #ffffff;
   padding-bottom: 60px;
   padding-top: 60px;
 }
+
+.footer-adress-link{
+    font-weight: normal;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+
+color: #FFFFFF;
+text-decoration: none;
+font-style: normal;
+}
+.footer-link{
+  text-decoration: none;
+  font-style: normal;
+}
+
 /*------------------------------activity----------------------------------*/
 
 
