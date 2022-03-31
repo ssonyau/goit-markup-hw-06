@@ -150,6 +150,7 @@ body {
 /* ------------------------------hero--------------------------------- */
 
 .hero {
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -255,9 +256,8 @@ body {
   background-color: #2196f3;
 }
 
-.reasons-item {
-  padding-top: 94px;
-  padding-right: 8px;
+.reasons-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 /*-----------------------portfolio---------------------------*/
@@ -267,11 +267,9 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 
   color: #212121;
-  padding-top: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
 }
 
 .portfolio-text {
@@ -282,9 +280,6 @@ body {
 
   color: #757575;
 
-  padding-bottom: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
 }
 
 .portfolio-pre {
@@ -297,16 +292,25 @@ body {
 .portfolio-pre-title {
   margin-bottom: 30px;
   width: 370px;
-  height: 404px;
-  left: 215px;
-  top: 696px;
-
   background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
+}
+
+.portfolio-o-pre-title{
+  width: 370px;
+  background: #ffffff;
 }
 .portfolio {
   padding-bottom: 94px;
+}
+
+.portfolio-o {
+  padding-top: 20px ;
+  padding-bottom: 20px;
+  padding-left: 24px ;
+  padding-right: 24px; 
+  border-right: 1px solid rgba(238, 238, 238, 1);;
+  border-left: 1px solid rgba(238, 238, 238, 1);
+  border-bottom:1px solid rgba(238, 238, 238, 1);
 }
 
 /*---------------------------address---------------------------------------*/
@@ -326,10 +330,10 @@ body {
 /*----------------------------logo----------------------------------------*/
 
 .logo {
+  font-family: "Raleway";
   font-weight: bold;
   font-size: 26px;
   margin-right: 93px;
-
   letter-spacing: 0.03em;
 
   color: #2196f3;
@@ -372,13 +376,23 @@ body {
   background-color: #2f303a;
 }
 
+.footer-logo {
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  
+  color: #2196f3;
+  text-decoration: none;
+}
+
 .footer-pre {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.footer-item {
-  padding-bottom: 9px;
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer-o-pre {
@@ -408,11 +422,14 @@ body {
 }
 
 .activity-list {
+  margin-top: -30px;
+  margin-left: -30px;
   display: flex;
 }
 
 .activity-item {
- 
+  margin-top: 30px;
+  margin-left: 30px;
   background: #ffffff;
 }
 
@@ -462,4 +479,9 @@ body {
   padding-top: 30px ;
   padding-bottom: 30px;
   text-align: center;
+}
+
+.reasons {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
