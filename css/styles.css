@@ -194,8 +194,7 @@ body {
 
 .portfolio-pre-title {
   background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
+
 }
 
 .properties-text {
@@ -284,20 +283,23 @@ body {
 
 .portfolio-pre {
   display: flex;
-  align-items: center;
+  margin-top: -30px;
+  margin-left: -30px;
   flex-wrap: wrap;
-  justify-content: space-between;
+  
 }
 
 .portfolio-pre-title {
   margin-bottom: 30px;
+  margin-top: 30px;
+  margin-left: 30px;
   width: 370px;
   background: #ffffff;
 }
 
 .portfolio-o-pre-title{
   width: 370px;
-  background: #ffffff;
+ 
 }
 .portfolio {
   padding-bottom: 94px;
@@ -381,6 +383,8 @@ body {
   font-weight: bold;
   font-size: 26px;
   letter-spacing: 0.03em;
+  display: block;
+  margin-bottom: 161px;
   
   color: #2196f3;
   text-decoration: none;
@@ -417,9 +421,6 @@ body {
 
 /*------------------------------activity----------------------------------*/
 
-.activity-hero {
-  margin-bottom: 30px;
-}
 
 .activity-list {
   margin-top: -30px;
