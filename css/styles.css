@@ -79,6 +79,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  
 
   color: #212121;
 }
@@ -147,6 +148,8 @@ body {
 .header-item:not(:last-child) {
   margin-right: 30px;
 }
+
+
 /* ------------------------------hero--------------------------------- */
 
 .hero {
@@ -328,11 +331,12 @@ body {
 }
 
 /*----------------------------logo----------------------------------------*/
-
+.logo-nav{
+  margin-right: 93px;
+}
 .logo {
   font-family: "Raleway";
   display: block;
-  margin-bottom: 30px;
   font-weight: bold;
   font-size: 26px;
   letter-spacing: 0.03em;
@@ -384,6 +388,7 @@ body {
   font-size: 26px;
   letter-spacing: 0.03em;
   display: block;
+  margin-bottom: 30px;
   
   color: #2196f3;
   text-decoration: none;
