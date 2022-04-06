@@ -100,7 +100,8 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding-left: 10px;
+  display: flex;
+  align-items: center;
 
   color: #757575;
 }
@@ -422,8 +423,7 @@ body {
 }
 
 .footer-container{
-  display: flex;
-  align-items: baseline
+
 }
 
 .footer-logo {
@@ -482,7 +482,6 @@ color: #FFFFFF;
   position: absolute;
   left: 516px;
   top: 1710px;
-  padding-top: 28px;
   padding-right: 516px;
   font-family: 'Roboto';
   font-style: normal;
@@ -513,14 +512,19 @@ color: #FFFFFF;
 .social-footer{
   padding: 0;
   border:none;
-  display: block;
   width: 44px;
   height: 44px;
   fill: var(--accent-color);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer-actors-icons{
+  height: 20px;
+  width: 20px;
 }
 
 .social-footer:hover,
@@ -538,7 +542,7 @@ color: #FFFFFF;
 
 .footer-section{
   padding-top: 20px;
-  display: flex;
+    display: flex;
 }
 
 /*------------------------------activity----------------------------------*/
@@ -651,7 +655,12 @@ color: #FFFFFF;
 
 
 .client-icon{
-color: var(--icons-color);
+fill: var(--icons-color);
+}
+
+.client-icon:hover,
+.client-icon:focus {
+  fill: var(--button-color);
 }
 
 .client-item{
@@ -667,10 +676,10 @@ color: var(--icons-color);
 
 /*------------------------icon-----------------------------------------*/
 .icon-tel {
-  Width :10px;
-  Height :16px;
+  width :10px;
+  height :16px;
   fill: currentColor;
-  
+  margin-right: 10px;
 }
 .icon-tel:hover,
 .icon-tel:focus,
@@ -683,16 +692,16 @@ color: var(--icons-color);
 }
 
 .icon-mail {
-  Width :16px;
-  Height :12px;
+  width :16px;
+  height :12px;
   fill: currentColor;
-
+margin-right: 10px;
 }
 
 .content-icon{
   width: 70px;
   height: 70px;
-  fill: currentColor; 
+  fill: var(--icons-color);
 }
 
 .team-icons{
