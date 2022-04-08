@@ -649,7 +649,7 @@ color: #FFFFFF;
 .clients-container{
   display: flex;
   justify-content: space-between;
-  
+  cursor: pointer;
 }
 
 .client-item:hover,
@@ -676,6 +676,7 @@ fill: var(--icons-color);
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 
