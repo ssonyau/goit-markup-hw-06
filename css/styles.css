@@ -64,37 +64,27 @@ body {
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
   visibility: visible;
-  transition: opacity 250ms var(var(--timing-function));
+  transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
 }
 
 .backdrop.is-hidden.backdrop-form{
   transform: translate(-50%, -50%) scale(0.5);
 }
 
-.backdrop-form{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  min-width: 528px;
-  min-height: 581px;
-  background-color: var(--accent-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  transition: transform 2500ms var(--timing-function);
-}
 
 .backdrop-btn{
   position: absolute;
   top: 8px;
   right: 8px;
+  width: 30px;
+  height: 30px;
   border: 0;
   padding: 0;
   background-color: var(--accent-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-  transition: transform 2500ms var(--timing-function);
+  transition: transform 250ms var(--timing-function);
 }
 
 .backdrop-icon{
@@ -102,8 +92,6 @@ body {
   right: 16.67%;
   top: 16.67%;
   bottom: 22.22%;
-  
-  background: #000000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -117,11 +105,12 @@ body {
 }
 
 .modal{
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%) scale(1);
 position: absolute;
 width: 528px;
 height: 581px;
-left: 536px;
-top: 221px;
 
 background: #FFFFFF;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -198,6 +187,7 @@ border-radius: 4px;
   align-items: center;
 
   color: #757575;
+  transform: #757575 250ms var(--timing-function);
 }
 
 .header-btn {
@@ -234,6 +224,7 @@ border-radius: 4px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  transform: rgba(255, 255, 255, 0.6) 250ms var(--timing-function);
 }
 
 .header-title {
@@ -286,29 +277,39 @@ border-radius: 4px;
   padding-top: 94px;
 }
 
+.thumber-shumber{
+position: relative;
+
+}
+
 .project-overlay{
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background-color:rgba(33, 150, 243, 0.9);
-  transform: translateY(100%);
-  transition: transform 250ms var(--timing-function);
-  overflow: hidden;
+position: absolute;
+width: 100%;
+height: 294px;
+background: rgba(33, 150, 243, 0.9);
+bottom: 110px;
+display: none;
+transition: transform 250ms var(--timing-function)
 }
 
 
-.project-description{
+.portfolio-pre-title:hover .project-overlay{
   display: block;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.5px;
-  letter-spacing: 0.03em;
-  padding-top: 63px;
-  padding-left: 24px;
-  color: #FFFFFF;
-  transition: transform 250ms var(--timing-function);
+}
+
+.portfolio-pre:hover{
+transform: translateY(0);
+}
+
+.project-p{
+display: block;
+font-weight: 400;
+font-size: 18px;
+line-height: 1.5;
+color: var(--accent-color);
+padding-top: 63px;
+padding-left: 24px;
+transition: transform 250ms var(--timing-function);
 }
 
 .properties-title {
@@ -677,6 +678,8 @@ color: #FFFFFF;
 .social-footer:hover,
 .social-footer:focus {
   background-color: var(--button-color);
+  transition: color 250ms var(--timing-function);
+  
 }
 
 .footer-container-ul{
@@ -812,6 +815,8 @@ color: #FFFFFF;
 .button-social:focus {
   background-color: var(--button-color);
   fill: var(--accent-color);
+    transition: color 250ms var(--timing-function);
+    transition: fill 250ms var(--timing-function);
 }
 
 .clients-container{
@@ -823,7 +828,9 @@ color: #FFFFFF;
 .client-item:hover,
 .client-item:focus {
   border: 1px solid var(--button-color);
-  fill: var(--button-color)
+  fill: var(--button-color);
+
+    transition: fill 250ms var(--timing-function);
 }
 
 
@@ -836,6 +843,7 @@ color: #FFFFFF;
   justify-content: center;
   align-items: center;
 fill: var(--icons-color)
+
 }
 
 
@@ -845,6 +853,8 @@ fill: var(--icons-color)
   height :16px;
   fill: currentColor;
   margin-right: 10px;
+  transition: color 250ms var(--timing-function);
+  transition: fill 250ms var(--timing-function);
 }
 .icon-tel:hover,
 .icon-tel:focus,
@@ -853,20 +863,23 @@ fill: var(--icons-color)
 {
   color: var(--accent-color);
   cursor: pointer;
-  fill: var(--button-color)
+  fill: var(--button-color);
 }
 
 .icon-mail {
   width :16px;
   height :12px;
   fill: currentColor;
-margin-right: 10px;
+  margin-right: 10px;
+  transition: color 250ms var(--timing-function);
+  transition: fill 250ms var(--timing-function);
 }
 
 .content-icon{
   width: 70px;
   height: 70px;
   fill: var(--icons-color);
+    transition: fill 250ms var(--timing-function);
 }
 
 .team-icons{
@@ -890,6 +903,7 @@ margin-right: 10px;
   height: 44px;
   border-radius: 50%;
   fill:var(--icons-color);
+    transition: fill 250ms var(--timing-function);
 }
 
 .button-social:hover,
