@@ -187,7 +187,7 @@ border-radius: 4px;
   align-items: center;
 
   color: #757575;
-  transform: #757575 250ms var(--timing-function);
+  transform: color 250ms var(--timing-function);
 }
 
 .header-btn {
@@ -301,7 +301,7 @@ transition: transform 250ms var(--timing-function)
 transform: translateY(0);
 }
 
-.project-p{
+.project-p::after{
 display: block;
 font-weight: 400;
 font-size: 18px;
@@ -309,7 +309,13 @@ line-height: 1.5;
 color: var(--accent-color);
 padding-top: 63px;
 padding-left: 24px;
-transition: transform 250ms var(--timing-function);
+transition: color 250ms var(--timing-function);
+opacity: 0;
+}
+
+.project-p:hover::after{
+  opacity: 1;
+
 }
 
 .properties-title {
@@ -381,6 +387,7 @@ transition: transform 250ms var(--timing-function);
   padding-right: 22px;
   color: #212121;
   border: none;
+  transition: color 250ms var(--timing-function);
 }
 
 .reasons-pre {
@@ -668,6 +675,7 @@ color: #FFFFFF;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 250ms var(--timing-function);
 }
 
 .footer-actors-icons{
@@ -842,7 +850,8 @@ color: #FFFFFF;
   display: flex;
   justify-content: center;
   align-items: center;
-fill: var(--icons-color)
+  fill: var(--icons-color);
+  transition: fill 250ms var(--timing-function), border 250ms var(--timing-function);
 
 }
 
@@ -871,8 +880,6 @@ fill: var(--icons-color)
   height :12px;
   fill: currentColor;
   margin-right: 10px;
-  transition: color 250ms var(--timing-function);
-  transition: fill 250ms var(--timing-function);
 }
 
 .content-icon{
@@ -903,7 +910,7 @@ fill: var(--icons-color)
   height: 44px;
   border-radius: 50%;
   fill:var(--icons-color);
-    transition: fill 250ms var(--timing-function);
+    transition: fill 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
 
 .button-social:hover,
