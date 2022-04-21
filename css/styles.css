@@ -148,7 +148,8 @@ border-radius: 4px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
-  transition: color;
+  transition: color 250ms var(--timing-function);
+
 
 }
 
@@ -291,22 +292,18 @@ width: 100%;
 height: 294px;
 background: rgba(33, 150, 243, 0.9);
 bottom: 110px;
-display: none;
-transition: transform 250ms var(--timing-function)
-transform: translateY(100%);
+transition: transform 250ms var(--timing-function), transform: translateY(100%);
 overflow: hidden;
 opacity: 0;
 
 }
 
-.project-overlay:hover{
+/* .project-overlay:hover{
   opacity: 1;
-}
+} */
 
 
-.portfolio-pre-title:hover .project-overlay{
-  display: block;
-}
+
 
 .portfolio-pre:hover{
 transform: translateY(0);
@@ -487,6 +484,10 @@ transform: var(--timing-function)
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
   0px 4px 4px rgba(0, 0, 0, 0.06),
   1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-list:hover.project-overlay{
+  
 }
 
 .portfolio-o-pre-title{
@@ -928,7 +929,7 @@ color: #FFFFFF;
   height: 44px;
   border-radius: 50%;
   fill:var(--icons-color);
-    transition: fill 2250ms var(--timing-function), background-color 2250ms var(--timing-function);
+    transition: fill 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
 
 .button-social:hover,
