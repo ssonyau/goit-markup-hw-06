@@ -283,6 +283,11 @@ border-radius: 4px;
 position: relative;
 }
 
+.portfolio-list:hover .project-overlay,
+.portfolio-list:focus .project-overlay{
+  transform: translateY(0);
+}
+
 .project-overlay{
 position: absolute;
 top: 0;
@@ -293,14 +298,13 @@ background: rgba(33, 150, 243, 0.9);
 transition: transform 250ms var(--timing-function);
 transform: translateY(100%);
 overflow: hidden;
-opacity: 0;
+
 }
 
-.project-overlay:hover,
+/* .project-overlay:hover,
 .project-overlay:focus{
-  opacity: 1;
   transform: translateY(0);
-}
+} */
 
 
 .project-p{
@@ -476,11 +480,11 @@ transform: var(--timing-function);
   1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-list:hover.project-overlay,
+/* .portfolio-list:hover.project-overlay,
 .portfolio-list:focus.project-overlay {
   opacity: 1;
   transform: translateY(0);
-}
+} */
 
 .portfolio-o-pre-title{
   width: 370px;
