@@ -279,39 +279,16 @@ border-radius: 4px;
   padding-top: 94px;
 }
 
-.thumber-shumber{
-position: relative;
-}
-
-.portfolio-list:hover .project-overlay,
-.portfolio-list:focus .project-overlay{
-  transform: translateY(0);
-}
 
 .project-overlay{
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 294px;
-background: rgba(33, 150, 243, 0.9);
-transition: transform 250ms var(--timing-function);
-transform: translateY(100%);
+position: relative;
 overflow: hidden;
-
 }
-
-/* .project-overlay:hover,
-.project-overlay:focus{
-  transform: translateY(0);
-} */
 
 
 .project-p{
   position: absolute;
-display: flex;
-justify-content: center;
-align-items: center;
+  background-color: var(--button-color);
 font-weight: 400;
 font-size: 18px;
 line-height: 1.5;
@@ -321,11 +298,10 @@ padding-left: 24px;
 padding-bottom: 83px;
 width: 100%;
 height: 100%;
-bottom: 0;
+top: 0;
 left: 0;
 transform: translateY(100%);
-transition: color 250ms var(--timing-function);
-transform: var(--timing-function);
+transition: transform 250ms var(--timing-function);
 }
 
 
@@ -454,9 +430,6 @@ transform: var(--timing-function);
   
 }
 
-.portfolio-pre:hover{
-  transform: translateY(0);
-}
 
 .portfolio-pre-title {
   margin-top: 30px;
@@ -480,11 +453,10 @@ transform: var(--timing-function);
   1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-/* .portfolio-list:hover.project-overlay,
-.portfolio-list:focus.project-overlay {
-  opacity: 1;
-  transform: translateY(0);
-} */
+.portfolio-list:hover .project-p,
+.portfolio-list:focus .project-p,{
+  transform: translateY(0%);
+}
 
 .portfolio-o-pre-title{
   width: 370px;
