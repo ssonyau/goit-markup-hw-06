@@ -88,6 +88,8 @@ body {
 }
 
 .backdrop-icon{
+  background-image: url(../images/iks.svg);
+  position: absolute;
   left: 22.22%;
   right: 16.67%;
   top: 16.67%;
@@ -288,7 +290,7 @@ overflow: hidden;
 
 .project-p{
   position: absolute;
-  background-color: var(--button-color);
+  background-color: rgba(33, 150, 243, 0.9);
 font-weight: 400;
 font-size: 18px;
 line-height: 1.5;
