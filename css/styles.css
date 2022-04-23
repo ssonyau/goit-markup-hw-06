@@ -454,7 +454,7 @@ transition: transform 250ms var(--timing-function);
 }
 
 .portfolio-list:hover .project-p,
-.portfolio-list:focus .project-p,{
+.portfolio-list:focus .project-p{
   transform: translateY(0%);
 }
 
