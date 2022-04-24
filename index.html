@@ -67,20 +67,50 @@
             
             <div class="backdrop is-hidden"  data-modal>
                 <div class="modal">
-                    <form class="js-speaker-form" autocomplete="off">
-                        <p class="modal-text">Оставьте свои данные,мы вам перезвоним</p>
-                        <label class="label-field">Имя</label>
-                        <div class="container-fieldmod">
-                            <input class="input-field" type="text" name="name" placeholder>
-                            <svg class="modicon" width="12" height="12"></svg>
-                        </div>
-
-                    </form>
                 <button type="button" class="backdrop-btn" data-modal-close>
                     <svg class="backdrop-icon" width="11" height="11">
                         <!-- <use href="./images/sprite.svg#icon-iks"></use> -->
                     </svg>
                 </button>
+                <form class="modal-field">
+                    <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
+                    <div class="form-modal">
+                        <label class="form-label"> <p class="name">Имя</p>
+                            <input class="form-input" type="text" name="name" placeholder=" " />
+                            <svg class="form-icon-p" width="18" height="18">
+                                <use href="./images/symbol-defs.svg#icon---18dp-1"></use>
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="form-modal">
+                        <label class="form-label"> <p class="tel">Телефон</p>
+                            <input type="tel" name="phone_number" />
+                            <svg class="form-icon-t" width="18" height="18">
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="form-modal">
+                        <label class="form-label"><p class="mail">Почта</p>
+                            <input type="email" name="email" />
+                            <svg class="form-icon-m" width="18" height="18">
+                                <use href="./images/symbol-defs.svg#icon-email-black-18dp-1"></use>
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="form-modal">
+                        <label for=""> <p class="com">Комментарий</p></label>
+                        <textarea name="комментарий" rows="5" placeholder class="comment">Введите текст</textarea>
+                    </div>
+                    <label class="check-text">
+                        <input class="checkbox" type="checkbox" name="check" value="check" />
+                        <span class="check-icon"></span>
+                    
+                        <span class="agree-text">Cоглашаюсь с рассылкой и принимаю</span>
+                        <span class="agree-text bluetext">Условия договора</span>
+                    </label>
+                    
+                    <button class="agree-button" type="submit"><p class="send">Отправить</p></button>
+                </form>
                 </div>
             </div>
         </section>
@@ -422,6 +452,26 @@
         </ul>
     </div>
 </div>
+        <form class="form">
+            <div class="subscribe-form">
+                <div class="alarm">
+                    <p>Подпишитесь на рассылку</p>
+                </div>
+                <div class="form-field">
+                    <label>
+                        <input class="subscribe-input" type="email" name="email" placeholder="E-mail" />
+                    </label>
+                </div>
+                <div class="form-field">
+                    <button type="submit" class="subscribe-button">
+                        <span class="subscribe-label">Подписаться</span>
+                        <span class="subscribe-icon">
+                            <svg class="send" width="24px" height="24px">
+                            </svg>
+                    </button>
+                </div>
+            </div>
+        </form> 
 </footer>
 <script src="./js/modal.js"></script>
 </body>
