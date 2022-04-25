@@ -69,7 +69,7 @@
                 <div class="modal">
                 <button type="button" class="backdrop-btn" data-modal-close>
                     <svg class="backdrop-icon" width="11" height="11">
-                        <!-- <use href="./images/sprite.svg#icon-iks"></use> -->
+                        <use href="./images/symbol-defs2.1.svg#icon-iks-modal"></use>
                     </svg>
                 </button>
                 <form class="modal-field">
@@ -77,29 +77,29 @@
                     <div class="form-modal">
                         <label class="form-label"> <p class="name">Имя</p>
                             <input class="form-input" type="text" name="name" placeholder=" " />
-                            <svg class="form-icon-p" width="18" height="18">
-                                <use href="./images/symbol-defs.svg#icon-person-black-18dp-1"></use>
+                            <svg class="form-icon" width="18" height="18">
+                                <use href="./images/symbol-defs2.1.svg#icon-person-black"></use>
                             </svg>
                         </label>
                     </div>
                     <div class="form-modal">
                         <label class="form-label"> <p class="tel">Телефон</p>
-                            <input type="tel" name="phone_number" />
-                            <svg class="form-icon-t" width="18" height="18">
-                                <use href="./images/symbol-defs.svg#icon---18dp-1"></use>
+                            <input class="form-input" type="tel" name="phone_number" />
+                            <svg class="form-icon" width="18" height="18">
+                                <use href="./images/symbol-defs2.1.svg#icon-phone-black"></use>
                             </svg>
                         </label>
                     </div>
                     <div class="form-modal">
                         <label class="form-label"><p class="mail">Почта</p>
-                            <input type="email" name="email" />
-                            <svg class="form-icon-m" width="18" height="18">
-                                <use href="./images/symbol-defs.svg#icon-email-black-18dp-1"></use>
+                            <input class="form-input" type="email" name="email" />
+                            <svg class="form-icon" width="18" height="18">
+                                <use href="./images/symbol-defs2.1.svg#icon-email-black"></use>
                             </svg>
                         </label>
                     </div>
                     <div class="form-modal">
-                        <label for=""> <p class="com">Комментарий</p></label>
+                        <label for=" "> <p class="com">Комментарий</p></label>
                         <textarea name="комментарий" rows="5" placeholder class="comment">Введите текст</textarea>
                     </div>
                     <label class="check-text">
@@ -452,27 +452,28 @@
             </li>
         </ul>
     </div>
-</div>
-        <form class="form">
-            <div class="subscribe-form">
-                <div class="alarm">
-                    <p>Подпишитесь на рассылку</p>
-                </div>
-                <div class="form-field">
-                    <label>
-                        <input class="subscribe-input" type="email" name="email" placeholder="E-mail" />
-                    </label>
-                </div>
-                <div class="form-field">
-                    <button type="submit" class="subscribe-button">
-                        <span class="subscribe-label">Подписаться</span>
-                        <span class="subscribe-icon">
-                            <svg class="send" width="24px" height="24px">
-                            </svg>
-                    </button>
-                </div>
+    <form class="form">
+        <div class="subscribe-form">
+            <div class="alarm">
+                <p>Подпишитесь на рассылку</p>
             </div>
-        </form> 
+            <div class="form-field">
+                <label>
+                    <input class="subscribe-input" type="email" name="email" placeholder="E-mail" />
+                </label>
+            </div>
+            <div class="form-field">
+                <button type="submit" class="subscribe-button">
+                    <span class="subscribe-label">Подписаться</span>
+                    <span class="subscribe-icon">
+                        <svg class="send" width="24px" height="24px">
+                        </svg>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
 </footer>
 <script src="./js/modal.js"></script>
 </body>
