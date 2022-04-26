@@ -92,6 +92,10 @@ body {
   fill: var(--button-color);
 }
 
+.backdrop-icon:focus {
+  fill: var(--button-color);
+}
+
 .backdrop.is-hidden{
   opacity: 0;
   pointer-events: none;
